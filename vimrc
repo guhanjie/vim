@@ -77,7 +77,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
 Plugin 'garbas/vim-snipmate'
 " awesome colorscheme
-Plugin 'tomasr/molokai'
+Plugin 'dracula/vim'
 " Git/mercurial/others diff icons on the side of the file lines
 Plugin 'mhinz/vim-signify'
 " Automatically sort python imports
@@ -155,6 +155,7 @@ set shiftwidth=4
 " highlight cursor line and column
 set cursorline
 set cursorcolumn
+highlight ColorColumn ctermbg=LightGray
 " hidden startup messages
 set shortmess=atI
 " auto read and write
@@ -166,7 +167,7 @@ set confirm
 set nobackup
 " other settings 
 set langmenu=zh_CN.UTF-8
-set mouse=a
+"set mouse=a
 set whichwrap+=<,>,h,l,[,]
 set background=dark
 set encoding=utf-8
@@ -247,7 +248,7 @@ nmap ,wr :RecurGrepFast <cword><CR>
 " use 256 colors when possible
 if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
 	let &t_Co = 256
-    colorscheme molokai
+    colorscheme dracula
 else
     colorscheme delek
 endif
