@@ -552,3 +552,50 @@ let g:vim_markdown_frontmatter=1
 " and when you open this, you can manually trigger preview
 " via the command :InstantMarkdownPreview
 let g:instant_markdown_autostart = 0
+
+" optimize the search highlight color
+hi Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
+hi IncSearch term=standout cterm=bold,reverse ctermfg=61 gui=bold,reverse guifg=#6272a4
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" cscope setting
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("cscope")
+  set csprg=/usr/bin/cscope
+  set csto=1
+  set cst
+  set nocsverb
+  " add any database in current directory
+  if filereadable("cscope.out")
+      cs add cscope.out
+  endif
+  set csverb
+endif
+
+nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>	
+nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
+nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
+nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>	
+nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>	
+nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>	
+nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>	
+
+nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+
+nmap <C-@><C-@>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@><C-@>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@><C-@>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@><C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@><C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@><C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <C-@><C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
