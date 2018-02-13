@@ -317,6 +317,7 @@ map <F2> :TaskList<CR>
 
 " file finder mapping
 let g:ctrlp_map = ',e'
+let g:ctrlp_regexp = 1
 " hidden some types files
 let g:ctrlp_show_hidden = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.png,*.jpg,*.gif           "Linux
