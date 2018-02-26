@@ -557,6 +557,7 @@ let g:instant_markdown_autostart = 0
 " optimize the search highlight color
 hi Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
 hi IncSearch term=standout cterm=bold,reverse ctermfg=61 gui=bold,reverse guifg=#6272a4
+"hi IncSearch term=reverse ctermfg=17 ctermbg=215 guifg=#282a36 guibg=#ffb86c
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope setting
