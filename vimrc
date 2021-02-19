@@ -81,7 +81,7 @@ Plugin 'dracula/vim'
 " Git/mercurial/others diff icons on the side of the file lines
 Plugin 'mhinz/vim-signify'
 " Automatically sort python imports
-Plugin 'fisadev/vim-isort'
+"Plugin 'fisadev/vim-isort'
 " Drag visual blocks arround
 Plugin 'fisadev/dragvisuals.vim'
 " Window chooser
@@ -100,7 +100,7 @@ Plugin 'lilydjwg/colorizer'
 " javascript complete after install the plugin, you must cd the install
 " directory and run `npm install`, then add a .tern-project config file
 " the doc at http://ternjs.net/doc/manual.html#vim
-Plugin 'marijnh/tern_for_vim'
+"Plugin 'marijnh/tern_for_vim'
 " Golang Plugins
 Plugin 'fatih/vim-go'
 " JSX syntax highlight.
@@ -115,7 +115,7 @@ Plugin 'suan/vim-instant-markdown'
 " Handlebars syntax highlighting
 Plugin 'mustache/vim-mustache-handlebars'
 " Vue.js syntax and highlighting
-Plugin 'tao12345666333/vim-vue'
+"Plugin 'tao12345666333/vim-vue'
 " True Sublime Text style multiple selections for Vim
 Plugin 'terryma/vim-multiple-cursors'
 
@@ -375,6 +375,9 @@ let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_style_error_symbol = '✗'
 let g:syntastic_style_warning_symbol = '⚠'
+
+" SnipMate----------------------------------
+let g:snipMate = { 'snippet_version' : 1 }
 
 " Python-mode ------------------------------
 
