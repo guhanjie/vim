@@ -42,7 +42,7 @@ Plugin 'scrooloose/nerdtree'
 " Code commenter
 Plugin 'scrooloose/nerdcommenter'
 " Class/module browser
-Plugin 'majutsushi/tagbar'
+Plugin 'preservim/tagbar'
 " Code and files fuzzy finder
 Plugin 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
@@ -59,7 +59,7 @@ Plugin 'vim-airline/vim-airline-themes'
 " Consoles as buffers
 Plugin 'rosenfeld/conque-term'
 " Pending tasks list
-Plugin 'fisadev/FixedTaskList.vim'
+"Plugin 'fisadev/FixedTaskList.vim'
 " Surround
 Plugin 'tpope/vim-surround'
 " Autoclose
@@ -102,9 +102,9 @@ Plugin 'lilydjwg/colorizer'
 " the doc at http://ternjs.net/doc/manual.html#vim
 "Plugin 'marijnh/tern_for_vim'
 " Golang Plugins
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 " JSX syntax highlight.
-Plugin 'mxw/vim-jsx'
+"Plugin 'mxw/vim-jsx'
 " Markdown syntastic highlight
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -113,7 +113,7 @@ Plugin 'plasticboy/vim-markdown'
 " `sudo npm -g install instant-markdown-d`
 Plugin 'suan/vim-instant-markdown'
 " Handlebars syntax highlighting
-Plugin 'mustache/vim-mustache-handlebars'
+"Plugin 'mustache/vim-mustache-handlebars'
 " Vue.js syntax and highlighting
 "Plugin 'tao12345666333/vim-vue'
 " True Sublime Text style multiple selections for Vim
